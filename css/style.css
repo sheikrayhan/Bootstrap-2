@@ -1,0 +1,358 @@
+/* 
+Template Name: My Folio
+Author: Sheik Rayhan
+Version: 1.0.0
+Author URL: 
+UI Designer:
+Description: 
+
+Table OF ::content
+======================
+1. Nav Section 
+2. Banner Section 
+3. About Section 
+4. Service Section 
+5. My Work Section 
+7. Contact Section 
+8. Footer Section 
+*/
+
+/* Common CSS Start */
+:root {
+    --primaryColor: #02918b;
+    --textColor: #fff;
+    --hoverColor: #cfc91d;
+    --colorBlack: #0a0a0b;
+    --inputColor:#7e8287;
+    --borderColor: #d9dbdb;
+
+}
+body.darkMode{
+    --primaryColor: #4a5b44;
+    --textColor: #fff;
+    --hoverColor: #2f916d;
+    --colorBlack: #111;
+    --inputColor:#fff;
+    --borderColor: #d9dbdb;
+}
+body.darkMode{
+    background: #111;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+p,
+small{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.section_info {
+    color: #7e8287;
+  }
+  .section_info h2 {
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--primaryColor);
+  }
+  .section_info p b {
+    font-size: 23px;
+  }
+/* Common CSS End */
+/* Preloader Section CSS Start */
+#preloader{
+    position: fixed;
+    z-index: 99999999999999;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Preloader Section CSS End */
+/* Nav Section CSS Start */
+nav{
+    background: var(--primaryColor);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999999;
+    transition: 2s;
+}
+nav.active{
+    position: fixed;
+    animation: menu_fixed 1s;
+}
+@keyframes menu_fixed {
+    from{
+        top: -100px;
+    }   
+    to{
+        top: 0px;
+    } 
+}
+nav .container img{
+    transition: all linear 0.3s;
+}
+nav .container img:hover {
+    padding-left: 5px;
+}
+
+#nav ul li a{
+    color: var(--textColor);
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 20px 20px;
+    transition: .6s;
+}
+#nav ul li a:hover{
+    color: var(--hoverColor);
+    padding-right: 5px;
+    border-radius: 10px;
+}
+#nav .navbar-toggler:focus{
+    box-shadow: none;
+    outline: 1px solid var(--hoverColor);
+}
+/* Nav Section CSS End */
+/* Banner Section CSS Start */
+#banner{
+    background-image: url(../img/banner_bg.jpg);
+    height: 729px;
+    background-size: cover;
+    background-position: center;
+    color: var(--textColor);
+    position: relative;
+    z-index: 1;
+}
+#banner::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.66;
+    background-color: var(--colorBlack);
+    z-index: -1;
+  }
+#banner .banner_content h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+#banner .banner_content h1{
+    font-size: 68px;
+    font-weight: 800;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+}
+#banner .banner_content p{
+    font-size: 18px;
+}
+#banner .banner_content img{
+    margin: 25px auto;
+}
+#banner .banner_content a{
+    display: inline-block;
+    color: var(--colorBlack);
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 18px 40px;
+    background-color: var(--hoverColor);
+    letter-spacing: 5px;
+    transition: .7s;
+}
+#banner .banner_content a:hover{
+    color: var(--hoverColor);
+    background-color: var(--primaryColor);
+    border-radius: 3px;
+}
+/* Banner Section CSS End */
+
+/* About Section CSS Start */
+#about{
+    margin: 98px 0px;
+}
+#about .section_info{
+    margin-bottom: 80px;
+}
+#about .section_info p{
+    padding: 20px 0px;
+    margin: auto;
+}
+#about .about_item{
+    padding: 36px 40px;
+    border-right: 1px solid  #d9dbdb;
+}
+#about .about_item:last-child{
+    border: none;
+}
+#about .about_item i{
+    color: var(--primaryColor);
+    font-size: 25px;
+}
+#about .about_item h3{
+    font-size: 16px;
+    color: var(--inputColor);
+    font-weight: 800;
+    padding: 29px 0;
+}
+#about .about_item p{
+    font-size: 11px;
+    color: var(--inputColor);
+}
+/* About Section CSS End */
+
+/* ServiceSection CSS Start */
+#service{
+    background-image: url(../img/service_bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 75px 0;
+}
+#service .section_info h2, p{
+    padding-bottom: 30px;
+}
+#service .service_item {
+    padding: 25px 110px 25px 0;
+  }
+  #service .service_item i {
+    color: var(--primaryColor);
+    font-size: 25px;
+  }
+  #service .service_item h4 {
+    font-size: 16px;
+    color: var(--inputColor);
+    font-weight: 800;
+    padding: 29px 0;
+  }
+  #service .service_item p {
+    font-size: 11px;
+    color: var(--inputColor);
+  }
+/* ServiceSection CSS End */
+/* My Work Section CSS Start */
+#work {
+    padding: 100px 0;
+}
+#work .work_item img {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+#work .work_item {
+    position: relative;
+}
+#work .work_item .overlay {
+    position: absolute;
+    left: 28px;
+    right: 28px;
+    top: 20px;
+    bottom: 20px;
+    background: rgba(2, 145, 139, 0.85);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+} 
+#work .work_item:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+/* My Work Section CSS End */
+
+/* Contact Section CSS Start */
+#contact{
+    padding-top: 90px;
+}
+#contact .section_info p{
+    margin: auto;
+    padding: 20px 0;
+}
+#contact .contact_form{
+    background-color: var(--colorBlack);
+    padding: 70px 0;
+}
+#contact .contact_form input,
+#contact .contact_form textarea{
+    color: var(--textColor);
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 20px;
+    margin-bottom: 50px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--inputColor);
+}
+#contact .contact_form textarea{
+    resize: none;
+    font-family: 'Open Sans', sans-serif;
+}
+#contact .contact_form button{
+    color: var(--colorBlack);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 800;
+    background-color: var(--hoverColor);
+    border: none;
+    padding: 20px 66px;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .6s;
+}
+#contact .contact_form button:hover{
+    background-color: var(--primaryColor);
+    color: var(--hoverColor);
+}
+/* Contact Section CSS End */
+
+/* Footer Section CSS Start */
+footer{
+    background-color: var(--colorBlack);
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--textColor);
+    padding: 15px;
+    text-align: center;
+}
+/* Footer Section CSS End */
+
+/* Back to Top Button Section CSS Start */
+#backtoTop{
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    color: var(--hoverColor);
+    border: none;
+    border-radius: 50%;
+    background: var(--primaryColor);
+    transition: .5s;
+    cursor: pointer;
+    display: none;
+}
+#backtoTop:hover{
+    background: var(--hoverColor);
+    color: var(--primaryColor);
+}
+/* Back to Top Button Section CSS End */

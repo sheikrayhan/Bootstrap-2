@@ -1,0 +1,398 @@
+/* Resposive Section CSS Start */
+@media (min-width:992px) and (max-width:1199.98px) {
+    /* Banner Section Start */
+    #banner {
+        height: 665px;
+    }
+    #banner .banner_content h1 {
+        font-size: 52px;
+        letter-spacing: 25px;
+    }
+    #banner .banner_content h3 {
+        font-size: 26px;
+    }
+    /* Banner Section End */
+    /* About Section Start */
+    #about {
+        margin: 65px 0px;
+    }
+    #about .about_item {
+        padding: 36px 25px;
+    }
+    /* About Section End */
+    /* Service Section Start */
+    #service .section_info h2, p {
+        padding-bottom: 8px;
+    }
+    #service .service_item {
+        padding: 32px 39px 18px 0;
+    }
+    /* Service Section End */
+    /* Work Section CSS Start */
+    #work {
+        padding: 58px 0;
+    }
+    /* Work Section CSS End */
+    /* Contact Section CSS Start */
+    #contact {
+        padding-top: 50px;
+    }
+    #contact .contact_form input, #contact .contact_form textarea {
+        padding: 5px 22px;
+    }
+    #contact .contact_form {
+        padding: 50px 0;
+    }
+    /* Contact Section CSS End */
+}
+
+
+
+@media (min-width:768px) and (max-width:991.98px) {
+    /* Nav Section CSS Start */
+    #nav ul li a {
+        padding: 14px 20px;
+    }
+    /* Nav Section CSS End */
+    /* Banner Section CSS Start */
+    #banner {
+        height: 600px;
+    }
+    #banner .banner_content h1 {
+        font-size: 40px;
+        letter-spacing: 20px;
+    }
+    #banner .banner_content h3 {
+        font-size: 25px;
+    }
+    #banner .banner_content img {
+        margin: 20px auto;
+    }
+    #service .section_info h2, p {
+        padding-bottom: 15px;
+    }
+    #banner .banner_content a {
+        padding: 15px 33px;
+        letter-spacing: 2px;
+    }
+    /* Banner Section CSS End */
+    /* About Section CSS Start */
+    #about {
+        margin: 55px 0px;
+    }
+    #about .section_info p {
+        padding: 12px 0px;
+    }
+    #about .section_info {
+        margin-bottom: 48px;
+    }
+    #about .about_item:nth-child(2n) {
+        border: none;
+    }
+    /* About Section CSS End */
+    /* Service Section CSS Start */
+    #service {
+        background: #f0f0f8;
+    }
+    #service .service_item {
+        padding: 20px 61px 16px 0;
+    }
+    /* Service Section CSS End */
+    /* Work Section CSS Start */
+    .section_info h2 {
+        font-size: 38px;
+    }
+    #work {
+        padding: 45px 0;
+    }
+    #service .section_info h2, p {
+        padding-bottom: 3px;
+    }
+    #work .work_item .overlay {
+        left: 15px;
+        right: 15px;
+        top: 15px;
+        bottom: 15px;
+    }
+    #work .work_item .overlay h4{
+        font-size: 14px;
+    }
+    #work .work_item .overlay p{
+        font-size: 10px;
+    }
+    /* Work Section CSS End */
+    /* Contact Section CSS Start */
+    #contact .contact_form input, #contact .contact_form textarea {
+        color: var(--textColor);
+        padding: 13px 18px;
+        margin-bottom: 38px;
+    }
+    #contact .contact_form button {
+        padding: 18px 60px;
+    }
+    #contact .contact_form {
+        padding: 50px 0;
+    }
+    /* Contact Section CSS End */
+}
+
+
+
+@media (min-width:576px) and (max-width:767.98px) {
+    /* Nav Section CSS Start */
+    #nav ul li a {
+        padding: 14px 17px;
+    }
+    /* Nav Section CSS End */
+    /* Banner Section CSS Start */
+    #banner {
+        height: 500px;
+    }
+    #banner .banner_content h1 {
+        font-size: 33px;
+        letter-spacing: 14px;
+    }
+    #banner .banner_content h3 {
+        font-size: 22px;
+    }
+    #banner .banner_content p {
+        font-size: 16px;
+    }
+    #service .section_info h2, p {
+        padding-bottom: 10px;
+    }
+    #banner .banner_content img {
+        margin: 20px auto;
+    }
+    #banner .banner_content a {
+        padding: 15px 38px;
+        letter-spacing: 4px;
+    }
+    /* Banner Section CSS End */
+    /* About Section CSS Start */
+    #about {
+        margin: 38px 0px;
+    }
+    .section_info h2 {
+        font-size: 33px;
+    }
+    #about .section_info p {
+        padding: 8px 0px;
+    }
+    #about .section_info p {
+        padding: 4px 0px;
+    }
+    .section_info p b {
+        font-size: 15px;
+    }
+    #about .section_info {
+        margin-bottom: 38px;
+    }
+    #about .about_item {
+        padding: 15px 10px;
+    }
+    /* About Section CSS End */
+    /* Service Section CSS Start */
+    #service {
+        background: #f0f0f8;
+        padding: 15px 0;
+    }
+    #service .section_info h2, p {
+        padding-bottom: 6px;
+    }
+    #service .service_item {
+        padding: 25px 7px 15px 0;
+    }
+    #service .service_item i {
+        font-size: 19px;
+    }
+    #service .service_item h4 {
+        padding: 15px 0;
+        font-size: 14px;
+    }
+    /* Service Section CSS End */
+    /* Work Section CSS Start */
+    #work {
+        padding: 25px 0;
+    }
+    #work .work_item .overlay {
+        left: 15px;
+        right: 15px;
+        top: 15px;
+        bottom: 15px;
+    }
+    #work .work_item .overlay h4{
+        font-size: 14px;
+    }
+    #work .work_item .overlay p{
+        font-size: 10px;
+    }
+    /* Work Section CSS End */
+    /* Contact Section CSS Start */
+    #contact .section_info p {
+        padding: 9px 0;
+    }
+    #contact .contact_form input, #contact .contact_form textarea {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    #contact .contact_form button {
+        font-size: 13px;
+        padding: 15px 45px;
+    }
+    #contact .contact_form {
+        padding: 23px 0;
+    }
+    /* Contact Section CSS End */
+}
+
+
+@media (max-width:575.98px) {
+    /* Nav Section CSS Start */
+    #nav ul li a {
+        font-size: 11px;
+        padding: 10px 10px;
+    }
+    /* Nav Section CSS End */
+    /* Banner Section CSS Start */
+    #banner {
+        height: 400px;
+    }
+    #banner .banner_content h1 {
+        font-size: 24px;
+        letter-spacing: 5px;
+    }
+    #banner .banner_content h3 {
+        font-size: 13px;
+    }
+    #banner .banner_content p {
+        font-size: 11px;
+    }
+    #service .section_info h2, p {
+        padding-bottom: 3px;
+    }
+    #banner .banner_content img {
+        margin: 13px auto;
+    }
+    #banner .banner_content a {
+        padding: 11px 10px;
+        letter-spacing: 2px;
+        font-size: 12px;
+    }
+    /* Banner Section CSS End */
+    /* About Section CSS Start */
+    #about {
+        margin: 5px 0px;
+    }
+    .section_info h2 {
+        font-size: 30px;
+    }
+    #about .about_item h3 {
+        font-size: 14px;
+        padding: 5px 0;
+    }
+    #about .section_info p {
+        padding: 5px 0px;
+        font-size: 12px;
+    }
+    .section_info p b {
+        font-size: 10px;
+    }
+    #about .section_info {
+        margin-bottom: 10px;
+    }
+    #about .about_item {
+        padding: 10px 10px;
+    }
+    #about .about_item:last-child {
+        border-right: 1px solid #d9dbdb;
+    }
+    /* About Section CSS End */
+    /* Service Section CSS Start */
+    #service {
+        background: #f0f0f8;
+        padding: 20px 0;
+    }
+    #service .section_info p{
+        font-size: 13px;
+    }
+    #service .section_info h2, p {
+        padding-bottom: 4px;
+    }
+    #service .service_item {
+        padding: 25px 7px 15px 0;
+    }
+    #service .service_item i {
+        font-size: 19px;
+    }
+    #service .service_item h4 {
+        padding: 15px 0;
+        font-size: 14px;
+    }
+    /* Service Section CSS End */
+    /* My Work Section CSS Start */
+    #work {
+        padding: 20px 0;
+    }
+    #service .section_info h2, p {
+        font-size: 12px;
+    }
+    #work .work_item .overlay {
+        left: 15px;
+        right: 15px;
+        top: 15px;
+        bottom: 15px;
+    }
+    #work .work_item .overlay h4{
+        font-size: 14px;
+    }
+    #work .work_item .overlay p{
+        font-size: 10px;
+    }
+    /* My Work Section CSS End */
+    /* Contact Section CSS Start */
+    
+    #contact .section_info p {
+        padding: 5px 0;
+    }
+    #contact .contact_form input, #contact .contact_form textarea {
+        font-size: 13px;
+        padding: 2px 3px;
+        margin-bottom: 15px;
+    }
+    #contact .contact_form button {
+        font-size: 12px;
+        padding: 13px 26px;
+    }
+    #contact .contact_form {
+        padding: 21px 0;
+    }
+    footer {
+        font-size: 8px;
+        padding: 6px;
+    }
+    /* Contact Section CSS End */
+}
+
+/* Resposive Section CSS End */
+
+
+
+@media (max-width:767.98px){
+    #contact {
+        padding-top: 20px;
+    }
+    nav .container img{
+        width: 70%;
+    }
+    #banner .banner_content img{
+        width: 80px;
+    }
+    #about .about_item{
+        border: none;
+    }
+    #about .about_item:last-child{
+        border: none;
+    }
+}
+
